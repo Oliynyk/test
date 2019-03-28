@@ -1,0 +1,23 @@
+<?php
+$arr = array(
+    array('1','Діма' , '23' , '400' ),
+    array('2','Діма' , '25' , '400' ),
+    array('3','Вася' , '23' , '500' ),
+    array('4','Коля' , '30' , '1000' ),
+    array('5','Іван' , '27' , '500' ),
+    array('6','Кирилo' , '28' , '1000' )
+);
+
+echo '<table border="1" style ="border-collapse: collapse">';
+echo '<tr><th>id</th><th>name</th><th>age</th><th>salary</th></tr>';
+foreach( $arr as $movie )
+{
+    echo '<tr>';
+    foreach( $movie as $key )
+    {
+        echo '<td>'.$key.'</td>';
+    }
+    echo '</tr>';
+}
+echo '</table>';
+?>
